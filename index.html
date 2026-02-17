@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyrene - HSR</title>
+    <link rel="icon" type="image/png" href="img/cyrene.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Background Elements -->
+        <div class="bg-stars"></div>
+        <div class="bg-nebula"></div>
+        <div class="bg-grid"></div>
+
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <div class="nav-left">
+                <div class="profile-icon">
+                    <img src="img/cyrene.png" alt="Profile">
+                </div>
+                <span class="user-name">Cyrene</span>
+            </div>
+            <div class="nav-center">
+                <a href="#home" class="nav-item active" data-tab="home"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#characters" class="nav-item" data-tab="characters"><i class="fa-solid fa-user-astronaut"></i>
+                    Character</a>
+                <a href="#lightcones" class="nav-item" data-tab="lightcones"><i class="fa-solid fa-clone"></i> Light
+                    Cones</a>
+                <a href="#relics" class="nav-item" data-tab="relics"><i class="fa-solid fa-shapes"></i> Relics</a>
+            </div>
+            <div class="nav-right">
+                <div class="currency">
+                    <i class="fa-solid fa-gem"></i> 16,000
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay">
+            <div class="mobile-nav-content">
+                <div class="mobile-nav-header">
+                    <span class="menu-title">MENU</span>
+                    <button class="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="mobile-nav-links">
+                    <a href="#home" class="mobile-nav-item active" data-tab="home"><i class="fa-solid fa-house"></i>
+                        Home</a>
+                    <a href="#characters" class="mobile-nav-item" data-tab="characters"><i
+                            class="fa-solid fa-user-astronaut"></i> Character</a>
+                    <a href="#lightcones" class="mobile-nav-item" data-tab="lightcones"><i
+                            class="fa-solid fa-clone"></i> Light Cones</a>
+                    <a href="#relics" class="mobile-nav-item" data-tab="relics"><i class="fa-solid fa-shapes"></i>
+                        Relics</a>
+                </div>
+                <div class="mobile-nav-footer">
+                    <div class="uid">UID: 800123456</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+
+            <!-- Home Section (Character Overview Style) -->
+            <section id="home" class="tab-content active">
+                <div class="hero-left">
+                    <div class="path-icon">
+                        <i class="fa-solid fa-code"></i>
+                        <span>The Erudition</span>
+                    </div>
+                    <h1 class="character-name">CYRENE</h1>
+                    <div class="rarity">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="character-description">
+                        <p class="flavor-text">
+                            "Code is poetry written in the language of the universe. Every function, a star in the vast
+                            galaxy of creation."
+                        </p>
+                        <div class="stats-container">
+                            <div class="stat-row">
+                                <span class="stat-label">HP</span>
+                                <span class="stat-value">3450</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Age</span>
+                                <span class="stat-value">20+</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">DEF</span>
+                                <span class="stat-value">1100</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">SPD</span>
+                                <span class="stat-value">134</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="#characters" class="btn-primary js-tab-trigger" data-tab="characters">Cosplay</a>
+                        <a href="#lightcones" class="btn-secondary js-tab-trigger" data-tab="lightcones">Switch</a>
+                    </div>
+                </div>
+                <!-- Character Art is background/absolute positioned -->
+                <div class="hero-character">
+                    <img src="img/bun.jpeg" alt="Cyrene Character Art">
+                </div>
+            </section>
+
+            <!-- Cosplay Section -->
+            <section id="characters" class="tab-content">
+                <div class="section-header">
+                    <button class="btn-back js-tab-trigger" data-tab="home"><i class="fa-solid fa-arrow-left"></i>
+                        Back</button>
+                    <h2 class="section-title">Cosplay Showcase</h2>
+                </div>
+                <div class="cosplay-gallery">
+                    <div class="cosplay-card">
+                        <img src="img/kafkacos.png" alt="Kafka" class="cosplay-image">
+                        <div class="cosplay-overlay">
+                            <h3>Kafka</h3>
+                            <p>Honkai: Star Rail</p>
+                        </div>
+                    </div>
+                    <div class="cosplay-card">
+                        <img src="img/yaoguang2.png" alt="Raiden Shogun" class="cosplay-image">
+                        <div class="cosplay-overlay">
+                            <h3>Yao guang</h3>
+                            <p>Honkai: Star Rail</p>
+                        </div>
+                    </div>
+                    <div class="cosplay-card">
+                        <img src="img/fuguecos.png" alt="2B" class="cosplay-image">
+                        <div class="cosplay-overlay">
+                            <h3>Fugue</h3>
+                            <p>Honkai: Star Rail</p>
+                        </div>
+                    </div>
+                    <div class="cosplay-card">
+                        <img src="img/ciphercos.png" alt="Makima" class="cosplay-image">
+                        <div class="cosplay-overlay">
+                            <h3>Cipher</h3>
+                            <p>Honkai: Star Rail</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Gallery -->
+            <section id="lightcones" class="tab-content">
+                <div class="section-header">
+                    <button class="btn-back js-tab-trigger" data-tab="home"><i class="fa-solid fa-arrow-left"></i>
+                        Back</button>
+                    <h2 class="section-title">Light Cones (Projects)</h2>
+                </div>
+                <div class="lc-gallery">
+                    <div class="lc-card">
+                        <div class="lc-image placeholder"></div>
+                        <div class="lc-info">
+                            <h4>Night on the Galaxy</h4>
+                            <p>E-commerce Platform</p>
+                            <div class="lc-rarity">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="lc-card">
+                        <div class="lc-image placeholder"></div>
+                        <div class="lc-info">
+                            <h4>Texture of Memories</h4>
+                            <p>Social Media App</p>
+                            <div class="lc-rarity">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <div class="lc-card">
+                        <div class="lc-image placeholder"></div>
+                        <div class="lc-info">
+                            <h4>Cruising in the Stellar Sea</h4>
+                            <p>Portfolio Website</p>
+                            <div class="lc-rarity">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About/Contact -->
+            <section id="relics" class="tab-content">
+                <div class="section-header">
+                    <button class="btn-back js-tab-trigger" data-tab="home"><i class="fa-solid fa-arrow-left"></i>
+                        Back</button>
+                    <h2 class="section-title">Relics (About Me)</h2>
+                </div>
+                <div class="relic-set">
+                    <div class="relic-piece">
+                        <i class="fa-solid fa-hat-wizard"></i>
+                        <p>Head: Creative Vision</p>
+                    </div>
+                    <div class="relic-piece">
+                        <i class="fa-solid fa-hand-sparkles"></i>
+                        <p>Hands: Coding Expertise</p>
+                    </div>
+                    <div class="relic-piece">
+                        <i class="fa-solid fa-shirt"></i>
+                        <p>Body: Problem Solving</p>
+                    </div>
+                    <div class="relic-piece">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                        <p>Feet: Fast Delivery</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <h3>Join the Crew</h3>
+                    <p>Send a message to start a new journey.</p>
+                    <a href="https://www.facebook.com/share/p/189FATE47P/" class="btn-primary">Contact Cyrene</a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- UI Overlay Elements (HSR Style) -->
+        <div class="ui-corner-top-left"></div>
+        <div class="ui-corner-bottom-right">
+            <div class="uid">UID: 8000000</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
