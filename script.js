@@ -98,4 +98,26 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleMenu();
         });
     });
+
+    // Disable View Source (Ctrl+U) and Inspect Element shortcuts (optional but recommended for this request)
+    document.addEventListener('keydown', function (e) {
+        // Disable Ctrl+U (View Source)
+        if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+            e.preventDefault();
+            console.log('View Source is disabled');
+        }
+        // Disable F12 (DevTools)
+        if (e.key === 'F12') {
+            e.preventDefault();
+        }
+        // Disable Ctrl+Shift+I (Insect Element)
+        if (e.ctrlKey && e.shiftKey && (e.key === 'i' || e.key === 'I')) {
+            e.preventDefault();
+        }
+    });
+
+    // Disable Right Click context menu
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
 });
